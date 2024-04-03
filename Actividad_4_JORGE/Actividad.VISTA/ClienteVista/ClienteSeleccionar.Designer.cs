@@ -37,6 +37,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
@@ -47,19 +48,24 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(157, 13, 20);
             button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(431, 380);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Franklin Gothic Heavy", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.FromArgb(234, 160, 54);
+            button1.Location = new Point(205, 365);
             button1.Name = "button1";
-            button1.Size = new Size(117, 23);
+            button1.Size = new Size(142, 34);
             button1.TabIndex = 1;
             button1.Text = "SELECCIONAR";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // ClienteSeleccionar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(234, 160, 54);
             ClientSize = new Size(581, 450);
             Controls.Add(button1);
             Controls.Add(dataGridView1);

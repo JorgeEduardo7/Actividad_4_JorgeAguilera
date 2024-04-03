@@ -65,7 +65,7 @@ namespace Actividad.VISTA.PedidoVista
             editarPedido.Fecha = dateTimePicker1.Value;
             editarPedido.Total = Convert.ToDecimal(textBox2.Text);
             bss.EditarPedidoBss(editarPedido);
-            MessageBox.Show("Datos Actualizados");
+            MessageBox.Show("Datos Actualizados Correctamente");
 
             dataGridView1.DataSource = bss.ListarPedidoBss();
         }
@@ -84,6 +84,11 @@ namespace Actividad.VISTA.PedidoVista
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
